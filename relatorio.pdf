@@ -1,0 +1,80 @@
+Implementação de Algoritmos de Ordenação em C
+
+Aluno: Murilo de Sousa Sepulveda
+Disciplina: Arvores e grafos
+Professor: Vinicius
+Data: 20/02/2026
+
+1. Objetivo
+
+O objetivo desta atividade foi implementar alguns algoritmos de ordenação em linguagem C e comparar o tempo de execução entre eles.
+
+Os algoritmos implementados foram:
+
+Bubble Sort
+
+Selection Sort
+
+Insertion Sort
+
+Quick Sort
+
+Merge Sort
+
+Shell Sort
+
+2. Como foi feito
+
+Todos os algoritmos foram feitos no mesmo arquivo (sorting.c), cada um em uma função separada.
+
+No programa principal (main()):
+
+Foi criado um vetor com números aleatórios usando rand().
+
+Foi feito um menu para o usuário escolher qual algoritmo deseja executar.
+
+O tempo de execução foi medido usando a função clock() da biblioteca <time.h>.
+
+O vetor foi mostrado antes e depois da ordenação.
+
+Cada algoritmo foi testado com o mesmo tipo de vetor para poder comparar o desempenho.
+
+3. Explicação resumida dos algoritmos
+
+Bubble Sort:
+Compara elementos vizinhos e troca de posição se estiverem fora de ordem.
+
+Selection Sort:
+Procura o menor número do vetor e coloca na posição correta.
+
+Insertion Sort:
+Vai inserindo cada número na posição correta dentro da parte já ordenada.
+
+Quick Sort:
+Escolhe um número como pivô e divide o vetor em duas partes menores.
+
+Merge Sort:
+Divide o vetor em partes menores, ordena essas partes e depois junta tudo novamente.
+
+Shell Sort:
+É uma melhoria do Insertion Sort que compara elementos mais distantes no começo.
+
+4. Resultados
+
+Durante os testes, foi possível perceber que:
+
+Bubble Sort, Selection Sort e Insertion Sort foram mais lentos.
+
+Quick Sort e Merge Sort foram mais rápidos.
+
+Shell Sort ficou em um desempenho intermediário.
+
+Isso acontece porque os três primeiros fazem mais comparações, enquanto Quick e Merge utilizam divisão do problema, tornando o processo mais eficiente.
+
+5. Conclusão
+
+Com essa atividade foi possível entender melhor como funcionam os algoritmos de ordenação na prática.
+
+Também foi possível observar que alguns algoritmos são mais eficientes que outros, principalmente quando o vetor é maior.
+
+O Quick Sort e o Merge Sort apresentaram melhor desempenho nos testes realizados.
